@@ -14,10 +14,11 @@
 #define SENECA_LOGGER_H
 #include <iostream>
 #include <string>
+#include "event.h"
 
 namespace seneca {
 
-	class Event;
+
 
 	class Logger {
 

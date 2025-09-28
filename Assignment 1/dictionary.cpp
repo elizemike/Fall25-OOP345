@@ -126,7 +126,7 @@ namespace seneca {
 
 				m_wordArr = new Word[src.m_wordArrSize];
 
-				for (auto i = 0; i < m_wordArrSize; i++) {
+				for (auto i = 0u; i < m_wordArrSize; i++) {
 
 
 					m_wordArr[i] = src.m_wordArr[i];
@@ -172,7 +172,7 @@ namespace seneca {
 		bool firstWord{ true };
 		bool match = false; 
 
-		for (auto i = 0; i < m_wordArrSize; i++) {
+		for (auto i = 0u; i < m_wordArrSize; i++) {
 
 			if (m_wordArr[i].m_word == word) {
 
@@ -184,7 +184,7 @@ namespace seneca {
 
 					size_t len = std::strlen(word);
 
-					for (auto j = 0; j < len; j++) {
+					for (auto j = 0u; j < len; j++) {
 						std::cout << ' ';
 					}
 

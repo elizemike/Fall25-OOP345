@@ -20,8 +20,6 @@
 
 namespace seneca {
 
-	static int cnt{0};
-	
 	Event::Event(const std::string& name, const std::chrono::nanoseconds& duration)
 	{
 

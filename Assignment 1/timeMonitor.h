@@ -15,11 +15,11 @@
 #include <iostream>
 #include <string>
 #include <chrono>
+#include "event.h"
 
 
 namespace seneca {
 
-	class Event;
 
 	class TimeMonitor {
 
