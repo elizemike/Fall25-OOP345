@@ -37,7 +37,6 @@ namespace seneca {
 			for (auto i = 0u; i < m_numOfMembers; i++) {
 
 				delete m_teamChar[i];
-				/*m_teamChar[i] = nullptr;*/
 				
 			}
 
@@ -79,7 +78,7 @@ namespace seneca {
 
 			for (auto i = 0u; i < m_numOfMembers; i++) {
 				delete m_teamChar[i];
-				/*m_teamChar[i] = nullptr;*/
+
 			}
 			delete[] m_teamChar;
 			m_teamChar = nullptr;
@@ -102,7 +101,7 @@ namespace seneca {
 	{
 		for (auto i = 0u; i < m_numOfMembers; i++) {
 			delete m_teamChar[i];
-			/*m_teamChar[i] = nullptr;*/
+
 		}
 		delete[] m_teamChar;
 		m_teamChar = nullptr;
