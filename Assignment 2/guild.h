@@ -18,9 +18,9 @@ namespace seneca {
 
 	class Guild {
 
-		Character** m_guildChar;
-		size_t m_numOfMembers;
-		std::string m_guildName;
+		Character** m_guildChar{};
+		size_t m_numOfMembers{};
+		std::string m_guildName{};
 
 	public: 
 

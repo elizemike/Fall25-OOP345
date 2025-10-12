@@ -20,9 +20,9 @@ namespace seneca {
 
 	class Team {
 
-		Character** m_teamChar; //Composition: belongs to Team; destroyed along with Team
-		size_t m_numOfMembers;
-		std::string m_teamName; 
+		Character** m_teamChar{}; //Composition: belongs to Team; destroyed along with Team
+		size_t m_numOfMembers{};
+		std::string m_teamName{};
 
 	public:
 
