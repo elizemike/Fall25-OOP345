@@ -19,6 +19,7 @@ namespace seneca {
 	{
 		m_teamName = name;
 		m_numOfMembers = 0;
+		m_teamChar = nullptr;
 
 	}
 
@@ -38,7 +39,9 @@ namespace seneca {
 			}
 
 			delete[] m_teamChar;
+			m_teamChar = nullptr;
 			m_numOfMembers = 0;
+
 
 			m_teamName = src.m_teamName;
 
@@ -75,6 +78,7 @@ namespace seneca {
 				delete m_teamChar[i];
 			}
 			delete[] m_teamChar;
+			m_teamChar = nullptr;
 
 			m_numOfMembers = src.m_numOfMembers;
 			src.m_numOfMembers = 0;
@@ -96,7 +100,7 @@ namespace seneca {
 			delete m_teamChar[i];
 		}
 		delete[] m_teamChar;
-
+		m_teamChar = nullptr;
 		m_teamName = "";
 		m_numOfMembers = 0;
 
@@ -124,6 +128,7 @@ namespace seneca {
 
 		newArr[m_numOfMembers] = c->clone(); //deepcopy
 		delete[] m_teamChar;
+		m_teamChar = nullptr;
 
 		m_teamChar = newArr;
 		m_numOfMembers++;

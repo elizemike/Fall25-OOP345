@@ -19,6 +19,7 @@ namespace seneca {
     {
         m_guildName = name;
         m_numOfMembers = 0;
+        m_guildChar = nullptr;
 
     }
     Guild::Guild(const Guild& src)
@@ -65,6 +66,7 @@ namespace seneca {
         if (this != &src) {
 
             delete[] m_guildChar;
+            m_guildChar = nullptr;
 
             m_guildName = src.m_guildName;
             src.m_guildName = "";
@@ -82,6 +84,7 @@ namespace seneca {
     Guild::~Guild()
     {
         delete[] m_guildChar;
+        m_guildChar = nullptr;
         m_numOfMembers = 0;
         m_guildName = "";
 
